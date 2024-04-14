@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Love You</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+  .container {
+    margin-top: 100px;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  #yes {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  #no {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>I Love You</h1>
+  <button id="yes" class="button" onclick="showMessage('Congratulations')">YES</button>
+  <button id="no" class="button" onclick="showMessage('Sorry')">NO</button>
+  <div id="response"></div>
+</div>
+
+<script>
+function showMessage(message) {
+  document.getElementById('response').innerText = message;
+}
+</script>
+
+</body>
+</html>
